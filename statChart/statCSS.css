@@ -1,0 +1,158 @@
+html {
+	font-size: 20px;
+	font-family: Helvetica, Consolas, Calibri, Arial, sans-serif;
+	color:#649;
+	background-image: url('img/bg.jpg');
+	background-size: cover;
+}
+
+div#box {
+	border: 4px solid #96b;
+	border-left-width: 20px;
+	border-right-width: 20px;
+	border-radius: 6px;
+	padding: 0px;
+	margin: 0px auto 0px auto;
+	background-color: #aaa;
+	min-width: 1150px;
+	max-width: 1150px;
+	min-height: 600px;
+	display: flex;
+	flex-direction: column;
+}
+
+div#boxTitle {
+	font-size: 50px;
+	text-align: center;
+	border: 2px solid #649;
+	border-style: none none solid none;
+	border-radius: 1px;
+	padding: 25px;
+	margin: 0px;
+	background-color: #bad;
+	font-variant: small-caps;
+}
+
+div#tableBox {
+	border: 2px solid #649;
+	border-radius: 5px;
+	padding: 15px;
+	margin: 5px 10px 10px 50px;
+	background-color: #ccc;
+	margin-right: auto;
+	max-width: 100%;
+}
+
+div#optionBox {
+	border: 2px solid #649;
+	border-radius: 5px;
+	padding: 15px;
+	margin: 5px 10px 10px 50px;
+	background-color: #ccc;
+	min-width: 250px;
+	max-width: 320px;
+	min-height: 100px;
+	max-height: 600px;
+}
+
+div#tableBox table {
+	border-collapse: collapse;
+	border: 2px solid #649;
+	min-width: 300px;
+	min-height: 200px;
+	padding: 10px;
+}
+
+div#tableBox th {
+	border-collapse: collapse;
+	border: 2px solid #649;
+	padding: 15px;
+	background-color: #96b;
+	font-size: 20px;
+	font-weight: normal;
+	color: #eee;
+}
+
+div#tableBox tr, div#tableBox td {
+	border-collapse: collapse;
+	border: 2px solid #649;
+	padding: 10px;
+	background-color: #bad;
+}
+
+div.param {
+	background-color: #bad;
+	border-left: 8px solid #649;
+	border-radius: 2px 5px 5px 2px;
+	margin: 10px 20px 10px 0px;
+	padding: 5px;
+	color: #222;
+	font-size: 16px;
+	vertical-align: middle;
+	text-align: justify;
+}
+
+select, input {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+div select, div input[type = number] {
+	background-color: #ddd;
+	border: 2px solid #649;
+	border-radius: 2px;
+	margin: 0px;
+	padding: 4px;
+	color: #649;
+	font-size: 14px;
+}
+
+input.button {
+	width: 80%;
+	text-align: bottom;
+	max-width: 300px;
+	background-color: #ddd;
+	border: 2px outset #649;
+	border-radius: 5px;
+	margin: 5px 20px 5px 20px;
+	left: 10%;
+	padding: 2px;
+	color: #649;
+	font-size: 30px;
+	height: 48px;
+	transition: color 0.1s, box-shadow 0.1s, border 0.1s, background-color 0.1s, font-size 0.1s;
+}
+
+div select:hover, div input[type = number]:hover {
+	border-color: #f69;
+}
+
+div select:focus, div input[type = number]:focus {
+	border-color: #f69;
+	background-color: #fbc;
+	color: #222;
+}
+
+input.button:hover {
+	border-style: solid;
+	border-color: #f69;
+	background-color: #fbc;
+	color: #624;
+}
+
+input.button:active {
+	border-style: inset;
+	border-color: #f69;
+	background-color: #fbc;
+	box-shadow: 3px 3px 3px 0px #222 inset;
+	color: #c46;
+	font-size: 28px;
+}
+
+select:disabled {
+	color: #444;
+	background-color: #888;
+	border-color: #aaa;
+}

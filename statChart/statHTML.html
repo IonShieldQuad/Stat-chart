@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Stat chart</title>
+	<meta charset="UTF-8">
+	<link href="statCSS.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<div id="box">
+		<div id="boxTitle">Lab chart calculator</div>
+
+		<div id="tableBox">
+			<table>
+				<tr>
+					<th>Xi</th>
+					<th>Xavg</th>
+					<th>dXi</th>
+					<th>d^2Xi</th>
+					<th>Sn</th>
+					<th>dX</th>
+					<th>E%</th>
+				</tr>
+				
+				<tr>
+					<td><input type="number" name="value1" step="0.01" placeholder="Value 1"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td><input type="number" name="value2" step="0.01" placeholder="Value 2"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td><input type="number" name="value3" step="0.01" placeholder="Value 3"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td><input type="number" name="value4" step="0.01" placeholder="Value 4"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td><input type="number" name="value5" step="0.01" placeholder="Value 5"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="optionBox">
+			<div class="param">
+				Coefficient:
+				<input type="number" name="coeff" id="coeff" value="2.8" step="0.01">
+			</div>
+			<input type="button" class="button" onclick="calculate()" value="Calculate" />
+		</div>
+
+	</div>
+	
+<body>
+
+<script src="statJS.js"></script>
+</html>
